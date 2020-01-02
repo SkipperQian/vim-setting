@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/qyl/code/new_serv'
+let g:netrw_dirhist_2='/home/qyl/code/new_serv/lib'
+let g:netrw_dirhist_3='/home/qyl/code/hba_lx'
+let g:netrw_dirhist_4='/home/qyl/code/hba_lx/hba_drv'
+let g:netrw_dirhist_5='/home/qyl/code/hba_lx'
+let g:netrw_dirhist_6='/home/qyl/code/hba_lx/hba_demo'
+let g:netrw_dirhist_7='/home/qyl/code/hba_lx'
+let g:netrw_dirhist_8='/home/qyl/code/hba_lx/hba_demo'
