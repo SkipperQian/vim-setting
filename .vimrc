@@ -11,7 +11,7 @@ set encoding=utf-8
 syntax enable
 syntax on
 
-set guifont=Monospace\ Bold\ 9
+"set guifont=Monospace\ Bold\ 9
 
 "if has('gui_running')
 "	set background=light
@@ -35,7 +35,6 @@ set showcmd
 set cmdheight=2
 set laststatus=2
 
-set nocompatible
 
 filetype plugin indent on
 set smartindent
@@ -46,7 +45,7 @@ autocmd FileType java,xml,python set shiftwidth=4 |set tabstop=4 | set expandtab
 
 
 set autoread
-set completeopt=preview,menu
+set completeopt-=preview
 set clipboard+=unamed
 
 " 定义快捷键的前缀，即<Leader>
@@ -230,7 +229,7 @@ function! Replace(confirm, wholeword, replace)
         let search .= expand('<cword>')
     endif
     let replace = escape(a:replace, '/\&~')
-    execute 'argdo %s/' . search . '/' . replace . '/' . flag . '| update'
+    execute '%s/' . search . '/' . replace . '/' . flag . '| update'
 endfunction
 " 不确认、非整词
 nnoremap <Leader>R :call Replace(0, 0, input('Replace '.expand('<cword>').' with: '))<CR>
