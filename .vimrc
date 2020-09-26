@@ -67,8 +67,12 @@ Plug 'vim-scripts/TagHighlight'
 Plug 'tamlok/detorte'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'MattesGroeger/vim-bookmarks'
-Plug 'davidhalter/jedi-vim'
 Plug 'easymotion/vim-easymotion'
+
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'Shougo/deoplete-clangx'
 
 " 延迟按需加载，使用到命令的时候再加载或者打开对应文件类型才加载
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
