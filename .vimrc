@@ -51,6 +51,16 @@ set clipboard+=unamed
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 
+" 设置快捷键将选中文本块复制至系统剪贴板
+vnoremap <Leader>y "+y
+" " 设置快捷键将系统剪贴板内容粘贴至 vim
+nmap <Leader>p "+p
+" " 定义快捷键关闭当前分割窗口
+nmap <Leader>q :q<CR>
+" " 定义快捷键保存当前窗口内容
+nmap <Leader>w :w<CR>
+
+
 " plugin set
 
 call plug#begin('~/.vim/plugged')
@@ -87,6 +97,8 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 noremap <C-]> g<C-]>
+
+let g:deoplete#enable_at_startup = 1
 "set tags=./tags;/
 
 " gutentags 搜索工程目录的标志，当前文件路径向上递归直到碰到这些文件/目录名
